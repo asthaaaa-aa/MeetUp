@@ -84,6 +84,7 @@ nav {
 .heroSection{
   height: 100vh;
   align-items: center;
+  justify-content: center;
   display: flex;
   gap: 30px;
   flex-direction: row;
@@ -101,4 +102,12 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.meetContainer .rightPanel{
+  background: url(home-heroImg.png);
+  /* height: 30vh; */
+  width: 45vw;
+  background-size: contain;
+    background-repeat: no-repeat;
 }

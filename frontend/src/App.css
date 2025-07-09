@@ -1,3 +1,5 @@
+
+
 .landingPageContainer {
   width: 100vw;
   height: 100vh;
@@ -70,7 +72,7 @@
 .meetContainer {
   display: flex;
   padding-inline: 20px;
-  height: 80vh;
+  height: 90vh;
   gap: 10vw;
   justify-content: center;
 }

@@ -1,7 +1,7 @@
 .meetVideoContainer {
     position: relative;
     height: 100vh;
-    background: rgb(202, 205, 239);
+    background: #04071a;
     
 }
 
@@ -17,12 +17,12 @@
 .buttonContainers {
     position: absolute;
     width: 100vw;
-    bottom: 0;
+    bottom: 15px;
     text-align: center;
 }
 
 .buttonContainers svg {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .conferenceView { 
@@ -44,9 +44,9 @@
     position: absolute;
     height: 90vh;
     right: 0;
-    background: rgb(255, 252, 202);
+    background: rgb(215, 215, 215);
     border-radius: 10px;
-    width: 30vw;
+    width: 25vw;
     padding-inline: 20px;
 }
 
@@ -67,4 +67,23 @@
     flex: 1;
     overflow-y: auto;
     margin-bottom: 10px; /* space for the input */
+}
+
+
+.askUsername{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+    background: url(../martin-martz-Sjp4w1dYpoc-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.videoPreview{
+    height: 60vh;
+    border: 1px solid white;
 }

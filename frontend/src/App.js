@@ -8,7 +8,7 @@ import Authentication from './pages/Authentication';
 import { AuthProvider } from './contexts/AuthContext';
 import VideoMeetComponent from './pages/VideoMeet';
 import HomePage from './pages/HomePage';
-import HomePagee from './pages/HomePagee';
+// import HomePagee from './pages/HomePagee';
 
 function App() {
   return (
@@ -20,9 +20,8 @@ function App() {
           <Routes>
 
             <Route path="/" element={<LandingPage />} />
-            <Route path="/home" element={<HomePage/>}/>
-            <Route path="/hometest" element={<HomePagee/>}/>
             <Route path="/auth" element={<Authentication />} />
+            <Route path="/home" element={<HomePage/>}/>
             <Route path="/:url" element={<VideoMeetComponent />} />
           </Routes>
 
