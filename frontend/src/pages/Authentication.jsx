@@ -68,7 +68,7 @@ export default function Authentication() {
         <ThemeProvider theme={defaultTheme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
-                <Grid
+                <Grid 
                     item
                     xs={false}
                     sm={4}
