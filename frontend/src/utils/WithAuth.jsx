@@ -13,7 +13,7 @@ const withAuth = (WrappedComponent) => {
          
         useEffect( ()=> {
             if(!isAuthenticated()){
-                router("/auth")
+                router("/");
             }
         }, [])
 
