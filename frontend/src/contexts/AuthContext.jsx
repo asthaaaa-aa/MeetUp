@@ -36,6 +36,8 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
+    const routeTo = useNavigate();
+
     const handleLogin = async (username, password) => {
         try {
             let request = await client.post("/login", {
@@ -45,6 +47,7 @@ export const AuthProvider = ({ children }) => {
 
             if (request.status === httpStatus.OK) {
                 localStorage.setItem("token", request.data.token);
+                routeTo("/home")
             }
         } catch (err) {
             throw err
