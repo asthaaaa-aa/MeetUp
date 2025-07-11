@@ -5,7 +5,6 @@ import "../HomePage.css"
 import { Button, IconButton, TextField } from '@mui/material';
 import RestoreIcon from '@mui/icons-material/Restore';
 import { AuthContext } from '../contexts/AuthContext';
-
 function HomePage() {
 
 
@@ -49,6 +48,7 @@ function HomePage() {
         <div className="meetContainer">
           <div className="leftPanel">
             <div>
+              <h2>Welcome back !</h2>
               <h2 style={{color: "white"}}>Join any meeting room!</h2>
 
               <div style={{ display: 'flex', gap: "10px" }}>
@@ -67,4 +67,4 @@ function HomePage() {
 }
 
 
-export default withAuth(HomePage)
+export default withAuth(HomePage);

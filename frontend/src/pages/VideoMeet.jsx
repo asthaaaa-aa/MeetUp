@@ -452,12 +452,14 @@ export default function VideoMeetComponent() {
     return (
         <div>
 
+            
+
             {askForUsername === true ?
             
                 <div className={styles.askUsername}>
                     
 
-                    <h2 style={{color: "white"}}>Join as a Guest!</h2>
+                    <h2 style={{color: "white"}}>Join in!</h2>
 
                     <div className="inputUsername">
                     <TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
