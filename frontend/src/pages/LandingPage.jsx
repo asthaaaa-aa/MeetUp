@@ -33,7 +33,7 @@ const LandingPage = () => {
                 </div>
                 <div className='navlist'>
                     <p onClick={() => {
-                        router("/aljk23")
+                        router("/guest-meet")
                     }}>Join as Guest</p>
                     <p onClick={() => {
                         router("/auth")
@@ -60,7 +60,7 @@ const LandingPage = () => {
             
           </Typography>
           <Button onClick={() => {
-                        router("/aljk23")
+                        router("/guest-meet")
                     }}
             variant="contained"
             className="getStartedBtn"
