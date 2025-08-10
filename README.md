@@ -1,6 +1,4 @@
-Here’s a README for your **MeetUp** project, styled like your Camperly one:
 
----
 
 # 🎥 MeetUp – Zoom Clone
 
@@ -98,6 +96,3 @@ Inspired by Zoom and Google Meet, **MeetUp** was built to explore real-time comm
 * Progressive Web App (PWA) support
 * CI/CD deployment pipeline
 
----
-
-Do you want me to **include STUN/TURN server setup instructions** in this README so it’s production-ready? That’s crucial for WebRTC apps to work reliably across networks.
