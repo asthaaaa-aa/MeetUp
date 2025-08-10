@@ -24,7 +24,7 @@ Built using:
 
 ### Demo
 
-[Live Demo](https://meetupfrontend-9lat.onrender.com/)
+[(https://meetupfrontend-9lat.onrender.com/)](https://meetupfrontend-9lat.onrender.com/)
 
 ---
 
