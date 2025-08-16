@@ -26,15 +26,11 @@ function HomePage() {
           <p>Welcome back👋</p>
           <div className="hero-heading">
             <h1>Enter meeting code</h1> <br />
-            <input
-              onChange={(e) => setMeetingCode(e.target.value)}
-              id="outlined-basic"
-              label="Meeting Code"
-              type="text "
-            />
+            <TextField onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" />
+                <Button onClick={handleJoinVideoCall} variant='contained'>Join</Button>
             {/* <TextField  variant="outlined" /> */}
           </div>
-          <button onClick={handleJoinVideoCall}>Join in</button>
+          {/* <button onClick={handleJoinVideoCall}>Join in</button> */}
         </div>
         <div className="hero-img">
           <img src="hero-img.png" alt="" />
