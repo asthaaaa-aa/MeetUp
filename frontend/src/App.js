@@ -8,7 +8,6 @@ import Authentication from './pages/Authentication';
 import { AuthProvider } from './contexts/AuthContext';
 import VideoMeetComponent from './pages/VideoMeet';
 import HomePage from './pages/HomePage';
-// import HomePagee from './pages/HomePagee';
 
 function App() {
   return (

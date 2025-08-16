@@ -1,0 +1,9 @@
+.hero-img video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+}

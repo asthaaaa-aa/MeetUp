@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 1rem 3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 40px;
+}
+
+nav div{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+nav div p{
+    font-size: 1.1rem;
+    padding:  8px 10px;
+    cursor: pointer;
+}
+
+.reg-button{
+    background-color: #2651FF;
+    color: white;
+    border-radius: 10px;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 2rem;
+    color: #2651FF;
+}
+
+.wrapper{
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 50vh;
+    margin: 5rem 0;
+
+}
+
+.hero-text{
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.hero-text h1{
+    font-size: 3.5rem;
+}
+.hero-text p {
+    font-size: 1.4rem;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-img img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text button{
+    background-color: #2651FF;
+    border: none;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-text input{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 2px solid #2651FF;
+    border-radius: 5px;
+}
+
+@media (max-width : 780px){
+    .hero-section{
+        height: 80vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 3rem;
+    }
+    .hero-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .hero-img{
+    width: 100%;}
+    .hero-text h1{
+    font-size: 3rem;
+}
+}

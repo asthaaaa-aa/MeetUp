@@ -57,7 +57,6 @@ nav {
 .heroImg{
     height: 60vh;
     width: 400px;
-    background: url(3d-rendering-people-avatars-zoom-call.png);
     /* background: url(3d-rendering); */
     background-size: cover;
     background-repeat: no-repeat;background-position-x: center;
@@ -76,7 +75,6 @@ nav {
 }
 
 .wrapper{
-  background: url(martin-martz-Sjp4w1dYpoc-unsplash.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }

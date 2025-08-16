@@ -1,7 +1,12 @@
+body{
+    
+}
+
 .meetVideoContainer {
     position: relative;
-    height: 100vh;
-    background: #04071a;
+    height: 95vh;
+    background-color: #c0ccff;
+    margin: 0 !important;
     
 }
 
@@ -47,10 +52,12 @@
     background: rgb(215, 215, 215);
     border-radius: 10px;
     width: 25vw;
-    padding-inline: 20px;
+    padding: 8px 20px;
+    border: 2px solid #3b5fff;
 }
 
 .chatContainer {
+    
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -70,20 +77,9 @@
 }
 
 
-.askUsername{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    gap: 2rem;
-    background: url(../martin-martz-Sjp4w1dYpoc-unsplash.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .videoPreview{
-    height: 60vh;
+    height: 50vh;
     border: 1px solid white;
 }

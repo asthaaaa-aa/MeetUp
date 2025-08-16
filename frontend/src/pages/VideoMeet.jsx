@@ -21,6 +21,8 @@ import ChatIcon from '@mui/icons-material/Chat'
 import { Camera, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import server from '../environment';
+// import JoinIn from './JoinIn';
+import Navbar from '../utils/Navbar';
 
 const server_url = server;
 
@@ -75,7 +77,6 @@ export default function VideoMeetComponent() {
     const getPermissions = async () => {
         try {
             const devices = await navigator.mediaDevices.enumerateDevices();
-            console.log(devices)
             const hasVideo = devices.some(device => device.kind === "videoinput"); //true if there is atleast one camera attached
             const hasAudio = devices.some(device => device.kind === "audioinput"); //similarly for audio
 
@@ -455,8 +456,9 @@ export default function VideoMeetComponent() {
             
 
             {askForUsername === true ?
+            <>
             
-                <div className={styles.askUsername}>
+                {/* <div className={styles.askUsername}>
                     
 
                     <h2 style={{color: "white"}}>Join in!</h2>
@@ -469,9 +471,24 @@ export default function VideoMeetComponent() {
 
                     <div className={styles.videoPreview}>
                         <video ref={localVideoRef} autoPlay muted> </video>
-                    </div>
+                    </div> */}
 
-                </div>
+                {/* </div> */}
+                <div className="wrapper">
+                        <Navbar/>
+                    <div className="hero-section">
+                        <div className="hero-text">
+                            <div className="hero-heading">
+                            <h1>Give your device permissions and join in</h1> <br/>
+                            <p >Enter you Username</p> <br />
+                            <TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
+                            </div> <br/>
+                            <button onClick={connect}>Join in</button>
+                        </div>
+                        <div className="hero-img"><video ref={localVideoRef} autoPlay muted></video></div>
+                
+                    </div>
+                    </div> </>
                 :
                 <>
 
@@ -512,10 +529,10 @@ export default function VideoMeetComponent() {
 
 
                     <div className={styles.buttonContainers}>
-                        <IconButton style={{ color: "white" }} onClick={handleVideo}>
+                        <IconButton style={{ color: "black" }} onClick={handleVideo}>
                             {(video === true) ? <VideocamIcon /> : <VideocamOffIcon />}
                         </IconButton>
-                        <IconButton onClick={handleAudio} style={{ color: "white" }}>
+                        <IconButton onClick={handleAudio} style={{ color: "black" }}>
                             {audio === true ? <MicIcon /> : <MicOffIcon />}
                         </IconButton>
                         <IconButton onClick={handleEndCall} style={{ color: "red" }}>
@@ -524,12 +541,12 @@ export default function VideoMeetComponent() {
                         
 
                         {screenAvailable === true ?
-                            <IconButton onClick={handleScreen}  style={{ color: "white" }}>
+                            <IconButton onClick={handleScreen}  style={{ color: "black" }}>
                                 {screen === true ? <ScreenShareIcon /> : <StopScreenShareIcon />}
                             </IconButton> : <></>}
 
                         <Badge onClick={()=> {(setShowModal(!showModal))}} badgeContent={newMessages} max={999} color='orange'>
-                            <IconButton style={{ color: "white" }}>
+                            <IconButton style={{ color: "black" }}>
                                 <ChatIcon />                        </IconButton>
                         </Badge>
 
